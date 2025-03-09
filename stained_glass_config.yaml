@@ -1,5 +1,5 @@
 image:
-  min_dimension: 80  # Minimum dimension for resizing while preserving aspect ratio
+  min_dimension: 100  # Minimum dimension for resizing while preserving aspect ratio
   force_square: false  # Set to true to force square images
 optimization:
   iterations: 400
@@ -14,4 +14,4 @@ output:
 random_seed: 42
 voronoi:
   k_neighbors: 3
-  num_cells: 3000
+  num_cells: 1000
