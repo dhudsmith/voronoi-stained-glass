@@ -1,0 +1,16 @@
+name: voronoi
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - matplotlib
+  - scipy
+  - tqdm
+  - pyyaml
+  - pip:
+    - "torch"
+    - "torchvision"
+    - "pytorch-msssim"

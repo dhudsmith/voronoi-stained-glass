@@ -616,7 +616,6 @@ class StainedGlassVoronoi:
             print(f"Created GIF: {output_path}")
 
         # Create GIFs for each directory
-        create_gif(self.rendered_dir, self.output_dir / "rendered_evolution.gif")
         create_gif(self.centroids_dir, self.output_dir / "centroids_evolution.gif")
         create_gif(self.comparison_dir, self.output_dir / "comparison_evolution.gif")
 
