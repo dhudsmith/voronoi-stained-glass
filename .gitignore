@@ -1,9 +1,6 @@
 *.DS_Store
-voronoi2d_output/
 .vscode/
-*.jpg
-*.png
-voronoi_image_output/
+output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -51,9 +51,9 @@ The algorithm uses a 2D Voronoi tessellation with associated color vectors for e
 
 The optimization process gradually reduces the "temperature" parameter (sigma), leading to sharper cell boundaries as the process continues.
 
-This gif shows the Voronoi tesselation during training for the astronaut example with 300 centroids. By the end, the line between earth and space can clearly be seen. 
 ![Astronaut Evolution](examples/astronaut_evol.gif)
-*Evolution of the astronaut image during optimization*
+*The Voronoi tesselation during training for the astronaut example with 300 centroids. By the end, the line between earth and space can clearly be seen.*
+
 
 ## Output Files
 
