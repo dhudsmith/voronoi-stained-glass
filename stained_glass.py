@@ -294,8 +294,8 @@ class StainedGlassVoronoi:
         upsampled_width = width * upsample_ratio
         upsampled_height = height * upsample_ratio
 
-        x = torch.linspace(0, width - 1, upsampled_width, device=self.device)
-        y = torch.linspace(0, height - 1, upsampled_height, device=self.device)
+        x = torch.linspace(0, width - 1, upsampled_width)
+        y = torch.linspace(0, height - 1, upsampled_height)
         grid_y, grid_x = torch.meshgrid(y, x, indexing="ij")
 
         points = torch.stack(

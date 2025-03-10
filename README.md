@@ -1,9 +1,9 @@
 # Voronoi Stained Glass
 
-![Astronaut Example](examples/astronaut.png)
+![Astronaut Example](examples/astronaut_comparison.png)
 
 
-This project uses Voronoi tessellation to transform images into beautiful stained glass-like artwork. By optimizing both the positions of Voronoi cells and their colors, it creates a stunning approximation of any input image.
+This project uses Voronoi tessellation to transform images into beautiful stained glass-like artwork.
 
 ## Usage
 ```bash
@@ -51,6 +51,10 @@ The algorithm uses a 2D Voronoi tessellation with associated color vectors for e
 
 The optimization process gradually reduces the "temperature" parameter (sigma), leading to sharper cell boundaries as the process continues.
 
+This gif shows the Voronoi tesselation during training for the astronaut example with 300 centroids. By the end, the line between earth and space can clearly be seen. 
+![Astronaut Evolution](examples/astronaut_evol.gif)
+*Evolution of the astronaut image during optimization*
+
 ## Output Files
 
 | File | Description |
@@ -58,31 +62,30 @@ The optimization process gradually reduces the "temperature" parameter (sigma), 
 | `voronoi_nearest_neighbor_final.png` | Final Voronoi diagram with hard cell boundaries |
 | `final_comparison.png` | Side-by-side comparison of the target image and the Voronoi approximation |
 | `rendered_final.png` | Final rendered image using weighted k-nearest neighbors for smooth transitions |
-| `rendered_evolution.gif` | Shows how the rendered image evolves during optimization |
 | `centroids_evolution.gif` | Shows how the Voronoi cell positions and colors evolve |
+| `comparison_evolution.gif` | Side-by-side comparison evolution |
 | `results.txt` | Contains detailed log information with loss metrics for each saved iteration |
 | `loss_history.png` | Graph showing how MSE, SSIM and combined loss evolve during training |
 | `models/voronoi_model_final.pt` | Saved PyTorch model containing the optimized Voronoi parameters |
 
-## Examples
+## Gallery
+Great Pyrenees Dog - 1,500 Centroids <br>
+![Dog](examples/dog_compare.png)
 
-Below are some examples showing the versatility of the Voronoi Stained Glass algorithm:
+The Bean, Downtown Chicago - 2,000 Centroids <br>
+![The Bean](examples/bean2k_compare.png)
 
-### Portrait Example
-![Portrait Example](examples/portrait_final.png)
-*A portrait transformed into Voronoi stained glass with 2000 cells*
+Crocus Vernus - 1,000 Centroids <br>
+![Crocus](examples/crocus_compare.png)
 
-### Landscape Example
-![Landscape Example](examples/landscape_final.png)
-*A landscape scene showing how the algorithm handles complex natural scenes*
+Daffodil - 500 Centroids <br>
+![Daffodil](examples/daffodil_compare.png)
 
-### Abstract Example
-![Abstract Example](examples/abstract_final.png)
-*The algorithm also works well with abstract and graphic designs*
+Looking Glass Falls, North Carolina - 1,500 Centroids <br>
+![Waterfall](examples/falls_compare.png)
 
-## Evolution Process
+Horsehead Nebula - 500 Centroids <br>
+![Horsehead Nebula](examples/horsehead_compare.png)
 
-The optimization process gradually refines both the positions and colors of the cells:
-
-![Evolution GIF](examples/evolution.gif)
-*Evolution of the Voronoi diagram during optimization*
+Two Brids by Escher - 2000 Centroids <br>
+![Two Birds by Escher](examples/twobirds_compare.png)

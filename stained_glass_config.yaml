@@ -2,16 +2,16 @@ image:
   min_dimension: 512  # Minimum dimension for resizing while preserving aspect ratio
   force_square: false  # Set to true to force square images
 optimization:
-  iterations: 400
-  save_every: 10
-  learning_rate: 0.1
+  iterations: 800
+  save_every: 20
+  learning_rate: 0.3
   ssim_weight: 0.5
   ssim_window_size: 5
-  sigma_final_ratio: 0.1
+  sigma_final_ratio: 0.05
 output:
   clean_temp_files: true
-  dir: voronoi_image_output
+  dir: output
 random_seed: 42
 voronoi:
-  k_neighbors: 3
-  num_cells: 1000
+  k_neighbors: 5
+  num_cells: 2000
