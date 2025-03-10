@@ -559,14 +559,14 @@ class StainedGlassVoronoi:
         # Original image
         plt.subplot(1, 2, 1)
         plt.imshow(self.target_image.permute(1, 2, 0).cpu().numpy())
-        plt.title("Target Image")
         plt.axis("off")
 
         # Nearest neighbor Voronoi
         plt.subplot(1, 2, 2)
         plt.imshow(nearest_neighbor_image.permute(1, 2, 0).cpu().numpy())
-        plt.title("Voronoi Diagram (Nearest Neighbor)")
         plt.axis("off")
+
+        plt.tight_layout()
 
         plt.savefig(self.output_dir / "final_comparison.png")
         plt.close()

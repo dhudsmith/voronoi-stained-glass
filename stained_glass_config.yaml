@@ -1,5 +1,5 @@
 image:
-  min_dimension: 100  # Minimum dimension for resizing while preserving aspect ratio
+  min_dimension: 512  # Minimum dimension for resizing while preserving aspect ratio
   force_square: false  # Set to true to force square images
 optimization:
   iterations: 400
